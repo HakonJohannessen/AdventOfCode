@@ -17,8 +17,8 @@ namespace AdventOfCode.Solved
             Console.WriteLine(modulesFuelRequirement);
 
             // Puzzle 1.2: 5146132 units of fuel
-            modulesFuelRequirement = moduleMasses.Select(mass => CalculateFuel.FromMass.Recursive(mass)).Sum();
-            Console.WriteLine(modulesFuelRequirement);
+            int modulesRecursiveFuelRequirement = moduleMasses.Select(mass => CalculateFuel.FromMass.Recursive(mass)).Sum();
+            Console.WriteLine(modulesRecursiveFuelRequirement);
 
             Console.ReadLine();
         }
